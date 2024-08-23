@@ -1,0 +1,11 @@
+import React from "react";
+
+function ContactPage() {
+  return (
+    <>
+      <h2>Contact Page</h2>
+    </>
+  );
+}
+
+export default ContactPage;

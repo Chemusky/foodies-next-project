@@ -33,6 +33,15 @@ export default function Home() {
           Community
         </Link>
       </p>
+      <p>
+        <Link
+          href={{
+            pathname: "/contact",
+          }}
+        >
+          Contact
+        </Link>
+      </p>
     </main>
   );
 }
