@@ -1,7 +1,7 @@
 import Link from "next/link";
 import logoImage from "@/assets/logo.png";
 import React from "react";
-
+import styles from "@/Components/main-header.module.css";
 // Con este archivo se pretende mostrar el header en cada una de las páginas de la aplicación
 // Finalmente se exporta e importa en el archivo layout
 
@@ -9,8 +9,9 @@ import React from "react";
 // estableciendo el nombre de la imagen importada terminada en .src
 function MainHeader() {
   return (
-    <header>
+    <header className={styles.header}>
       <Link
+        className={styles.logo}
         href={{
           pathname: "/",
         }}
@@ -19,7 +20,7 @@ function MainHeader() {
         NextLevel Food
       </Link>
 
-      <nav>
+      <nav className={styles.nav}>
         <ul>
           <li>
             <Link
